@@ -1,4 +1,5 @@
 export const portfolioData = {
+  resumeUrl: "/resume.pdf", // Place your resume PDF in the public folder and name it resume.pdf
   hero: {
     name: "Jatin Pathak",
     headline: "Backend Developer & Cybersecurity Enthusiast",

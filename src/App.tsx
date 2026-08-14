@@ -6,6 +6,7 @@ import { Skills } from './sections/Skills';
 import { Experience } from './sections/Experience';
 import { Projects } from './sections/Projects';
 import { Education } from './sections/Education';
+import { Resume } from './sections/Resume';
 import { Contact } from './sections/Contact';
 import { Footer } from './sections/Footer';
 
@@ -20,6 +21,7 @@ function App() {
         <Experience />
         <Projects />
         <Education />
+        <Resume />
         <Contact />
       </main>
       <Footer />
