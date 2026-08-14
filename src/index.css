@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-dark text-gray-300 font-sans antialiased selection:bg-accent selection:text-white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-white font-semibold;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-dark-lighter/50 backdrop-blur-md border border-dark-border rounded-lg shadow-xl;
+  }
+  
+  .tech-pill {
+    @apply px-3 py-1 text-xs font-mono rounded bg-dark-border/50 text-gray-300 border border-dark-border hover:border-accent/50 transition-colors duration-300;
+  }
+
+  .nav-link {
+    @apply text-sm text-gray-400 hover:text-white transition-colors duration-200;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-accent hover:bg-accent-hover text-white rounded font-medium transition-all duration-300 shadow-[0_0_15px_rgba(14,165,233,0.3)] hover:shadow-[0_0_25px_rgba(14,165,233,0.5)];
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-transparent border border-dark-border hover:border-accent text-white rounded font-medium transition-all duration-300;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-dark-border rounded hover:bg-gray-600 transition-colors;
+}
