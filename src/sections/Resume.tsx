@@ -18,7 +18,7 @@ export const Resume: React.FC = () => {
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Grab My Resume</h2>
             <p className="text-gray-400 mb-8 max-w-2xl mx-auto text-lg">
-              Looking for a formal document? Download my complete resume for a detailed overview of my technical skills, education, and professional experience.
+              Looking for a formal overview? Here is my complete resume, highlighting my technical skills, educational background, and professional experience.
             </p>
             
             <a 

@@ -11,7 +11,7 @@ export const portfolioData = {
   },
   skills: {
     languages: ["C/C++", "TypeScript", "JavaScript", "Python (Basics)"],
-    web: ["HTML", "CSS", "Tailwind CSS", "React", "Node.js", "Express.js"],
+    web: ["HTML", "CSS", "Tailwind CSS", "React(Intermediate)", "Node.js", "Express.js"],
     databases: ["PostgreSQL", "MongoDB", "MySQL (Basics)"],
     core: ["Data Structures", "REST APIs", "Web Development"],
     tools: ["Docker", "Postman", "VS Code", "Antigravity", "Cursor", "Git", "GitHub"],
