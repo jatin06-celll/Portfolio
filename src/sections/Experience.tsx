@@ -10,36 +10,34 @@ export const Experience: React.FC = () => {
       <div className="container mx-auto px-6 md:px-12">
         <SectionHeader title="Experience" />
         
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto space-y-8">
           {portfolioData.experience.map((exp, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="relative pl-8 md:pl-0"
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="relative rounded-2xl glass-panel overflow-hidden border border-dark-border"
             >
-              <div className="hidden md:block absolute left-1/2 -translate-x-1/2 w-0.5 h-full bg-dark-border"></div>
+              <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-accent to-purple-500"></div>
               
-              <div className="md:w-1/2 md:pr-12 md:text-right relative mb-12">
-                <div className="absolute left-[-32px] md:left-auto md:-right-[24px] top-1 w-12 h-12 bg-dark rounded-full border-4 border-dark-border flex items-center justify-center z-10 text-accent">
-                  <Briefcase size={20} />
+              <div className="p-6 md:p-8 flex flex-col md:flex-row gap-6 md:gap-12">
+                <div className="md:w-1/3 flex-shrink-0">
+                  <div className="flex items-center gap-2 text-accent font-medium mb-3">
+                    <Briefcase size={18} />
+                    <span>{exp.duration}</span>
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-bold text-white mb-2">{exp.role}</h3>
+                  <p className="text-gray-400">{exp.company}</p>
                 </div>
                 
-                <div className="glass-panel p-6 text-left md:text-right">
-                  <h3 className="text-xl font-bold text-white">{exp.role}</h3>
-                  <div className="flex flex-col md:items-end mt-1 mb-4">
-                    <span className="text-accent font-medium">{exp.company}</span>
-                    <span className="text-gray-500 text-sm font-mono">{exp.duration}</span>
-                  </div>
-                  
-                  <ul className="space-y-2 text-gray-300 text-sm">
+                <div className="md:w-2/3 flex items-center">
+                  <ul className="space-y-3 text-gray-300 text-sm md:text-base">
                     {exp.points.map((point, i) => (
-                      <li key={i} className="flex md:justify-end items-start gap-2">
-                        <span className="md:hidden text-accent mt-1">•</span>
+                      <li key={i} className="flex items-start gap-3">
+                        <span className="text-accent mt-1 flex-shrink-0 text-xl leading-none">•</span>
                         <span>{point}</span>
-                        <span className="hidden md:block text-accent mt-1">•</span>
                       </li>
                     ))}
                   </ul>
