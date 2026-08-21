@@ -13,8 +13,8 @@ export const portfolioData = {
     languages: ["C/C++", "TypeScript", "JavaScript", "Python (Basics)"],
     web: ["HTML", "CSS", "Tailwind CSS", "React(Intermediate)", "Node.js", "Express.js"],
     databases: ["PostgreSQL", "MongoDB", "MySQL (Basics)"],
-    core: ["Data Structures", "DBMS", "REST APIs", "Web Development"],
-    tools: ["Docker", "Postman", "VS Code", "Antigravity", "Cursor", "Git Actions"],
+    core: ["Data Structures", "DBMS", "REST APIs"],
+    tools: ["Docker", "Postman", "VS Code", "Antigravity", "Cursor"],
     cloudDevOps: ["AWS (EC2, S3, IAM)", "Docker", "GitHub Actions"],
   },
   experience: [
