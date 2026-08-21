@@ -25,6 +25,7 @@ export const Skills: React.FC = () => {
     { title: "Databases", skills: portfolioData.skills.databases },
     { title: "Core Concepts", skills: portfolioData.skills.core },
     { title: "Tools", skills: portfolioData.skills.tools },
+    { title: "Cloud / DevOps", skills: portfolioData.skills.cloudDevOps },
   ];
 
   return (

@@ -15,6 +15,7 @@ export const portfolioData = {
     databases: ["PostgreSQL", "MongoDB", "MySQL (Basics)"],
     core: ["Data Structures", "DBMS", "REST APIs", "Web Development"],
     tools: ["Docker", "Postman", "VS Code", "Antigravity", "Cursor", "Git Actions"],
+    cloudDevOps: ["AWS (EC2, S3, IAM)", "Docker", "GitHub Actions"],
   },
   experience: [
     {
