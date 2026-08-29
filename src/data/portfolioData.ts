@@ -10,11 +10,11 @@ export const portfolioData = {
     text: "I am a B.E. Electronics & Telecommunication student at Thakur College of Engineering and Technology, Mumbai, with a strong interest in backend development, web technologies, cybersecurity, APIs, databases, and systems-oriented software. I have practical development experience through my Backend Developer Internship at Bluestock Fintech and through projects involving real-time communication, secure transactions, network packet inspection, and cryptographic systems.",
   },
   skills: {
-    languages: ["C/C++", "TypeScript", "JavaScript", "Python (Basics)"],
+    languages: ["C++", "TypeScript", "JavaScript", "Python (Basics)"],
     web: ["HTML", "CSS", "Tailwind CSS", "React(Intermediate)", "Node.js", "Express.js"],
-    databases: ["PostgreSQL", "MongoDB", "MySQL (Basics)"],
-    core: ["Data Structures", "DBMS", "REST APIs"],
-    tools: ["Docker", "Postman", "VS Code", "Antigravity", "Cursor"],
+    databases: ["PostgreSQL", "MongoDB", "MySQL(Basics)"],
+    core: ["REST APIs", "DBMS", "CN"],
+    tools: ["Cursor", "Antigravity", "Agents", "Git", "GitHub", "Postman", "VS Code"],
     cloudDevOps: ["AWS (EC2, S3, IAM)", "Docker", "GitHub Actions"],
   },
   experience: [
