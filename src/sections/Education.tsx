@@ -50,7 +50,7 @@ export const Education: React.FC = () => {
                   <div>
                     <h3 className="text-lg font-bold text-white">{cert.title}</h3>
                     <p className="text-gray-400 mt-1">{cert.issuer}</p>
-                    <p className="text-gray-500 text-sm font-mono mt-1">{cert.date}</p>
+                    <p className="text-gray-500 text-sm font-mono mt-1">{cert.ID}</p>
                   </div>
                 </div>
               ))}
