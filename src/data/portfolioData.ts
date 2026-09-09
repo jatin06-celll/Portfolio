@@ -138,9 +138,9 @@ export const portfolioData = {
   ],
   certifications: [
     {
-      title: "Software Developer",
-      issuer: "Drixx Solution",
-      date: "3 Oct 2025 – 2 Jan 2026"
+      title: "JavaScript Bootcamp",
+      issuer: "LetsUpgrade",
+      ID: "LUEJSSEP124466"
     }
   ],
   contact: {
