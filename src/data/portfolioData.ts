@@ -11,11 +11,12 @@ export const portfolioData = {
   },
   skills: {
     languages: ["C++", "TypeScript", "JavaScript", "Python (Basics)"],
+    aiGenAi: ["LLMs", "RAG", "LangChain", "Prompt Engineering", "Tool Calling"],
     web: ["HTML", "CSS", "Tailwind CSS", "React(Intermediate)", "Node.js", "Express.js"],
     databases: ["PostgreSQL", "MongoDB", "MySQL(Basics)"],
-    core: ["REST APIs", "DBMS", "CN"],
-    tools: ["Cursor", "Antigravity", "Agents", "Git", "GitHub", "Postman", "VS Code"],
     cloudDevOps: ["AWS (EC2, S3, IAM)", "Docker", "GitHub Actions"],
+    tools: ["Cursor", "Antigravity", "Git", "GitHub", "Postman", "VS Code"],
+    core: ["REST APIs", "DBMS", "CN"],
   },
   experience: [
     {

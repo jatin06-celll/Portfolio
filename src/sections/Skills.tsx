@@ -20,12 +20,13 @@ export const Skills: React.FC = () => {
   };
 
   const skillCategories = [
-    { title: "Languages", skills: portfolioData.skills.languages },
-    { title: "Web Development", skills: portfolioData.skills.web },
-    { title: "Databases", skills: portfolioData.skills.databases },
-    { title: "Core Concepts", skills: portfolioData.skills.core },
-    { title: "AI & Developer Tools", skills: portfolioData.skills.tools },
+    { title: "Language", skills: portfolioData.skills.languages },
+    { title: "AI / GenAI", skills: portfolioData.skills.aiGenAi },
+    { title: "Web Dev", skills: portfolioData.skills.web },
+    { title: "Database", skills: portfolioData.skills.databases },
     { title: "Cloud / DevOps", skills: portfolioData.skills.cloudDevOps },
+    { title: "Dev Tools", skills: portfolioData.skills.tools },
+    { title: "Core Concepts", skills: portfolioData.skills.core },
   ];
 
   return (
