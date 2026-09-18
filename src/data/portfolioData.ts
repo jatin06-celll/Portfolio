@@ -2,12 +2,12 @@ export const portfolioData = {
   resumeUrl: "/resume.pdf", // Place your resume PDF in the public folder and name it resume.pdf
   hero: {
     name: "Jatin Pathak",
-    headline: "Backend Developer & Cybersecurity Enthusiast",
-    description: "I build secure backend systems, real-time applications, and cybersecurity-focused software using Node.js, TypeScript, MongoDB, React, and modern development tools.",
+    headline: "Backend Developer | Cybersecurity & AI Enthusiast",
+    description: "I build secure scalable backend systems, real-time applications, and cybersecurity-focused software using Node.js, TypeScript, MongoDB, and modern web technologies.",
     status: "● Open to Software Development Opportunities",
   },
   about: {
-    text: "I am a B.E. Electronics & Telecommunication student at Thakur College of Engineering and Technology, Mumbai, with a strong interest in backend development, web technologies, cybersecurity, APIs, databases, and systems-oriented software. I have practical development experience through my Backend Developer Internship at Bluestock Fintech and through projects involving real-time communication, secure transactions, network packet inspection, and cryptographic systems.",
+    text: "I am a B.E. Electronics & Telecommunication student at Thakur College of Engineering and Technology, Mumbai. My passion lies in backend development, cybersecurity, and building systems-oriented software. Through my internship at Bluestock Fintech and various hands-on projects, I have gained practical experience in designing secure RESTful APIs, implementing real-time communication, and developing robust cryptographic systems.",
   },
   skills: {
     languages: ["C++", "TypeScript", "JavaScript", "Python (Basics)"],
@@ -120,7 +120,7 @@ export const portfolioData = {
   },
   extracurricular: [
     {
-      role: "Working Committee",
+      role: "T.E Head",
       organization: "TCET-IEEE",
       points: [
         "Planned technical events",
@@ -132,8 +132,7 @@ export const portfolioData = {
       role: "Academic Tutor",
       organization: "Independent",
       points: [
-        "Mentored 25+ students",
-        "Developed communication and interpersonal abilities"
+        "Mentored 25+ students as an academic tutor, enhancing communication and interpersonal abilities"
       ]
     }
   ],
