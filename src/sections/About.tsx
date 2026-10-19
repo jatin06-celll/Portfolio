@@ -29,7 +29,7 @@ export const About: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="relative"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-blue-500/20 blur-3xl rounded-full"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-emerald-500/20 blur-3xl rounded-full"></div>
             <div className="glass-panel p-6 relative border border-dark-border">
               <div className="flex items-center justify-between mb-4 border-b border-dark-border pb-4">
                 <div className="flex gap-2">
@@ -43,7 +43,7 @@ export const About: React.FC = () => {
                 <p><span className="text-accent">~</span> $ whoami</p>
                 <p className="text-white">jatin_pathak</p>
                 <p><span className="text-accent">~</span> $ cat current_focus.txt</p>
-                <p className="text-white">Backend Systems, Network Security, API Design</p>
+                <p className="text-white">Backend Systems, AI/GenAI (LLMs, RAG), Cloud & APIs</p>
                 <p><span className="text-accent">~</span> $ uptime</p>
                 <p className="text-white">B.E. Student (2023-2027) | CGPA: 7.92</p>
               </div>
@@ -54,3 +54,5 @@ export const About: React.FC = () => {
     </section>
   );
 };
+
+

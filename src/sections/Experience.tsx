@@ -20,7 +20,7 @@ export const Experience: React.FC = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="relative rounded-2xl glass-panel overflow-hidden border border-dark-border"
             >
-              <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-accent to-purple-500"></div>
+              <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-accent to-emerald-600"></div>
               
               <div className="p-6 md:p-8 flex flex-col md:flex-row gap-6 md:gap-12">
                 <div className="md:w-1/3 flex-shrink-0">

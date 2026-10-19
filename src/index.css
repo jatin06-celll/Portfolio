@@ -7,11 +7,20 @@
   }
   
   body {
-    @apply bg-dark text-gray-300 font-sans antialiased selection:bg-accent selection:text-white;
+    @apply bg-dark text-gray-300 font-sans antialiased;
+    selection {
+      background: #00ff41;
+      color: #050a05;
+    }
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply text-white font-semibold;
+  }
+
+  ::selection {
+    background: #00ff41;
+    color: #050a05;
   }
 }
 
@@ -21,19 +30,42 @@
   }
   
   .tech-pill {
-    @apply px-3 py-1 text-xs font-mono rounded bg-dark-border/50 text-gray-300 border border-dark-border hover:border-accent/50 transition-colors duration-300;
+    @apply px-3 py-1 text-xs font-mono rounded border transition-colors duration-300;
+    background: rgba(0, 255, 65, 0.05);
+    color: #00ff41;
+    border-color: rgba(0, 255, 65, 0.2);
+  }
+
+  .tech-pill:hover {
+    border-color: rgba(0, 255, 65, 0.5);
+    background: rgba(0, 255, 65, 0.1);
+    box-shadow: 0 0 8px rgba(0, 255, 65, 0.15);
   }
 
   .nav-link {
-    @apply text-sm text-gray-400 hover:text-white transition-colors duration-200;
+    @apply text-sm text-gray-400 hover:text-accent transition-colors duration-200;
   }
 
   .btn-primary {
-    @apply px-6 py-3 bg-accent hover:bg-accent-hover text-white rounded font-medium transition-all duration-300 shadow-[0_0_15px_rgba(14,165,233,0.3)] hover:shadow-[0_0_25px_rgba(14,165,233,0.5)];
+    @apply px-6 py-3 text-dark font-medium rounded transition-all duration-300;
+    background: #00ff41;
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.3);
+  }
+
+  .btn-primary:hover {
+    background: #00cc33;
+    box-shadow: 0 0 30px rgba(0, 255, 65, 0.5);
   }
 
   .btn-secondary {
-    @apply px-6 py-3 bg-transparent border border-dark-border hover:border-accent text-white rounded font-medium transition-all duration-300;
+    @apply px-6 py-3 bg-transparent text-white rounded font-medium transition-all duration-300;
+    border: 1px solid rgba(0, 255, 65, 0.3);
+  }
+
+  .btn-secondary:hover {
+    border-color: #00ff41;
+    background: rgba(0, 255, 65, 0.08);
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.15);
   }
 }
 
@@ -43,9 +75,33 @@
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-dark;
+  background: #050a05;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-dark-border rounded hover:bg-gray-600 transition-colors;
+  background: #1a2e1a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2a4a2a;
+}
+
+/* CRT scanline overlay effect for sections */
+.scanline-overlay::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 255, 65, 0.015) 2px,
+    rgba(0, 255, 65, 0.015) 4px
+  );
+  pointer-events: none;
+  z-index: 1;
 }

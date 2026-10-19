@@ -8,15 +8,16 @@ export default {
     extend: {
       colors: {
         dark: {
-          DEFAULT: '#0a0a0a',
-          lighter: '#171717',
-          card: '#121212',
-          border: '#262626'
+          DEFAULT: '#050a05',
+          lighter: '#0d1a0d',
+          card: '#0a120a',
+          border: '#1a2e1a'
         },
         accent: {
-          DEFAULT: '#0ea5e9', // cyan/blue
-          hover: '#0284c7',
-          glow: 'rgba(14, 165, 233, 0.15)'
+          DEFAULT: '#00ff41', // Matrix neon green
+          hover: '#00cc33',
+          dim: '#00aa2a',
+          glow: 'rgba(0, 255, 65, 0.15)'
         }
       },
       fontFamily: {
@@ -24,11 +25,13 @@ export default {
         mono: ['Fira Code', 'JetBrains Mono', 'monospace'],
       },
       backgroundImage: {
-        'grid-pattern': 'linear-gradient(to right, #262626 1px, transparent 1px), linear-gradient(to bottom, #262626 1px, transparent 1px)',
+        'grid-pattern': 'linear-gradient(to right, #1a2e1a 1px, transparent 1px), linear-gradient(to bottom, #1a2e1a 1px, transparent 1px)',
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',
         'slide-up': 'slideUp 0.5s ease-out',
+        'pulse-glow': 'pulseGlow 2s ease-in-out infinite',
+        'scanline': 'scanline 8s linear infinite',
       },
       keyframes: {
         fadeIn: {
@@ -38,6 +41,14 @@ export default {
         slideUp: {
           '0%': { opacity: '0', transform: 'translateY(20px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        pulseGlow: {
+          '0%, 100%': { boxShadow: '0 0 5px rgba(0, 255, 65, 0.2)' },
+          '50%': { boxShadow: '0 0 20px rgba(0, 255, 65, 0.4)' },
+        },
+        scanline: {
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(100%)' },
         }
       }
     },

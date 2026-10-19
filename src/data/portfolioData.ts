@@ -7,7 +7,7 @@ export const portfolioData = {
     status: "● Open to Software Development Opportunities",
   },
   about: {
-    text: "I am a B.E. Electronics & Telecommunication student at Thakur College of Engineering and Technology, Mumbai. My passion lies in backend development, cybersecurity, and building systems-oriented software. Through my internship at Bluestock Fintech and various hands-on projects, I have gained practical experience in designing secure RESTful APIs, implementing real-time communication, and developing robust cryptographic systems.",
+    text: "I am an Electronics & Telecommunication engineering student at Thakur College of Engineering and Technology, Mumbai, with hands-on experience in backend, full-stack, AI/GenAI, and cloud development. Skilled in Node.js, Express.js, React, and MongoDB, with practical exposure to LLMs, RAG, and AWS. Through my internship at Bluestock Fintech and various hands-on projects, I focus on building secure, scalable applications and applying software, AI, and cloud technologies to real-world problems.",
   },
   skills: {
     languages: ["C++", "TypeScript", "JavaScript", "Python (Basics)"],
@@ -109,6 +109,41 @@ export const portfolioData = {
       ],
       github: "https://github.com/jatin06-celll/SocketChess",
       liveUrl: "https://a-chess.onrender.com/",
+    },
+    {
+      id: "dsabot",
+      title: "DSA Bot RAG",
+      shortDescription: "A Retrieval-Augmented Generation application for DSA learning, using Google Gemini and Pinecone vector database.",
+      description: "A Node.js Retrieval-Augmented Generation (RAG) application using Google Gemini, LangChain, and Pinecone vector database. It supports parsing PDF files, indexing content into Pinecone, and querying the knowledge base via a CLI for intelligent DSA-related answers.",
+      stack: ["Node.js", "LangChain", "Google Gemini", "Pinecone", "JavaScript"],
+      features: [
+        "PDF parsing and content extraction",
+        "Vector embedding with Google Gemini",
+        "Pinecone vector database indexing",
+        "RAG-based contextual query answering",
+        "CLI-based knowledge base interaction",
+        "LangChain pipeline orchestration"
+      ],
+      github: "https://github.com/jatin06-celll/DSA_bot_RAG",
+      liveUrl: "",
+    },
+    {
+      id: "wsd",
+      title: "Word Sense Disambiguation",
+      shortDescription: "An ML/NLP system that disambiguates polysemous words across languages using TF-IDF and Logistic Regression.",
+      description: "A Machine Learning and NLP system designed to disambiguate polysemous words across different languages based on sentence context. Uses TF-IDF Feature Unions (Word + Character n-grams) and Logistic Regression with an interactive Streamlit web application featuring real-time prediction and confidence scoring.",
+      stack: ["Python", "Scikit-learn", "Streamlit", "TF-IDF", "NLP"],
+      features: [
+        "Multi-language word sense disambiguation",
+        "TF-IDF Feature Union extraction",
+        "Logistic Regression classification",
+        "Interactive Streamlit web app",
+        "Real-time confidence scoring",
+        "Dataset analytics and exploration",
+        "CLI evaluation mode"
+      ],
+      github: "https://github.com/jatin06-celll/WSD-Word-Sense-Disambiguation-",
+      liveUrl: "",
     },
   ],
   education: {
